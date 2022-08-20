@@ -9,6 +9,6 @@
 
 // console.log(calc(1024, 28))
 
-const calc = (a: number, b: number): number => {
+calc = (a: number, b: number): number => {
   return a - b
 }
