@@ -9,8 +9,9 @@
     "dev": "tsc --watch",
     "build": "npm run clean && tsc",
     "clean": "rm -rf dist",
-    "lint": "eslint src --ext .js,.ts --cache --fix",
-    "prepare": "husky install"
+    "lint": "eslint src __tests__ --ext .js,.ts --cache --fix",
+    "prepare": "husky install",
+    "test": "jest"
   },
   "publishConfig": {
     "access": "public"
@@ -27,9 +28,14 @@
   },
   "homepage": "https://github.com/dongjing-tbody/test#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@types/jest": "^28.1.7",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "babel-jest": "^28.1.3",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^22.0.0",
@@ -38,6 +44,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^7.0.0",
-    "typescript": "^4.7.4"
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^9.1.1"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^28.1.3",
+    "typescript": "^4.5.2"
   }
 }
