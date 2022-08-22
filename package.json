@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "saber-d",
   "version": "1.0.0",
   "description": "this is  an automation  configuration test",
   "main": "dist/index.js",
@@ -33,6 +33,8 @@
     "@babel/preset-typescript": "^7.18.6",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@types/jest": "^28.1.7",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "babel-jest": "^28.1.3",
@@ -45,6 +47,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "husky": "^7.0.0",
     "jest": "^28.1.3",
+    "semantic-release": "^19.0.3",
     "ts-jest": "^28.0.8",
     "ts-node": "^9.1.1"
   },
